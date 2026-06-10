@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -13,7 +22,8 @@
         "subheading": {
           "type": "text",
           "settings": {
-            "text": "Small-batch hot sauces & BBQ condiments built for people who take flavour seriously."
+            "text": "Small-batch hot sauces & BBQ condiments built for people who take flavour seriously.",
+            "text_style": "body"
           }
         },
         "button": {
@@ -28,17 +38,22 @@
           }
         }
       },
-      "block_order": ["heading", "subheading", "button"],
+      "block_order": [
+        "heading",
+        "subheading",
+        "button"
+      ],
       "settings": {
+        "image": "shopify://shop_images/hero-ember-small.png",
         "image_overlay_opacity": 50,
         "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
         "image_behavior": "none",
+        "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
@@ -63,11 +78,18 @@
           "settings": {
             "button_label": "Explore the Range",
             "button_link": "shopify://collections/all",
-            "button_style_secondary": false
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -80,20 +102,19 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "collection": "hot-sauces",
+        "products_to_show": 4,
         "title": "Hot Sauces",
         "heading_size": "h2",
         "description": "<p>From everyday mild to face-melting heat — find your level.</p>",
         "show_description": true,
         "description_style": "body",
-        "collection": "hot-sauces",
-        "products_to_show": 4,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": true,
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -101,6 +122,7 @@
         "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 36
       }
@@ -133,7 +155,12 @@
           }
         }
       },
-      "block_order": ["hot_sauces", "bbq_sauces", "dry_rubs", "bundles"],
+      "block_order": [
+        "hot_sauces",
+        "bbq_sauces",
+        "dry_rubs",
+        "bundles"
+      ],
       "settings": {
         "title": "Shop by Category",
         "heading_size": "h2",
@@ -178,17 +205,21 @@
           }
         }
       },
-      "block_order": ["col_1", "col_2", "col_3"],
+      "block_order": [
+        "col_1",
+        "col_2",
+        "col_3"
+      ],
       "settings": {
         "title": "Why Ember & Oak",
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -202,7 +233,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Join the Heat"
+            "heading": "Join the Heat",
+            "heading_size": "h1"
           }
         },
         "subheading": {
@@ -212,7 +244,10 @@
           }
         }
       },
-      "block_order": ["heading", "subheading"],
+      "block_order": [
+        "heading",
+        "subheading"
+      ],
       "settings": {
         "color_scheme": "scheme-4",
         "full_width": true,
