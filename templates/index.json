@@ -82,7 +82,7 @@
       "settings": {
         "title": "Hot Sauces",
         "heading_size": "h2",
-        "description": "From everyday mild to face-melting heat — find your level.",
+        "description": "<p>From everyday mild to face-melting heat — find your level.</p>",
         "show_description": true,
         "description_style": "body",
         "collection": "hot-sauces",
