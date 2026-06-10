@@ -197,13 +197,12 @@
       }
     },
     "newsletter": {
-      "type": "email-signup-banner",
+      "type": "newsletter",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Join the Heat",
-            "heading_size": "h1"
+            "heading": "Join the Heat"
           }
         },
         "subheading": {
