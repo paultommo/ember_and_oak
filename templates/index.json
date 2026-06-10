@@ -11,7 +11,7 @@
           }
         },
         "subheading": {
-          "type": "subheading",
+          "type": "text",
           "settings": {
             "text": "Small-batch hot sauces & BBQ condiments built for people who take flavour seriously."
           }
