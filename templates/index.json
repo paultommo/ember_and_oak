@@ -30,7 +30,6 @@
       },
       "block_order": ["heading", "subheading", "button"],
       "settings": {
-        "image": "hero-ember.png",
         "image_overlay_opacity": 50,
         "image_height": "large",
         "desktop_content_position": "middle-center",
