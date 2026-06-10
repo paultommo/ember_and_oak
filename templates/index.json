@@ -208,7 +208,7 @@
         "subheading": {
           "type": "paragraph",
           "settings": {
-            "text": "Sign up for early access to new sauces, fire-side recipes, and exclusive drops."
+            "text": "<p>Sign up for early access to new sauces, fire-side recipes, and exclusive drops.</p>"
           }
         }
       },
