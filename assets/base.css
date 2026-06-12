@@ -201,6 +201,7 @@ textarea {
   padding: 1.2rem !important;
   letter-spacing: 0.02em;
   text-decoration: none !important;
+  white-space: nowrap !important;
 }
 
 .header__menu-item:hover span,
