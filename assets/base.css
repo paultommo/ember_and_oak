@@ -1,6 +1,21 @@
 .featured-collection .title {
   font-family: Arial, Helvetica, sans-serif !important;
   text-transform: uppercase !important;
+  text-align: center !important;
+}
+
+.featured-collection * {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.featured-collection .card__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.featured-collection .card__content {
+  margin-top: auto;
 }
 
 body,
