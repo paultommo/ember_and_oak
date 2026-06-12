@@ -15,25 +15,35 @@
 }
 
 /* Overlay card info on bottom of image */
-.featured-collection .card--media {
-  position: relative !important;
-  overflow: hidden;
+.card__overlay-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 1.2rem;
+  z-index: 5;
 }
 
-.featured-collection .card--media > .card__content {
-  position: absolute !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: 0 !important;
-  padding: 1.2rem !important;
-  background: rgba(0, 0, 0, 0.65) !important;
-  z-index: 3 !important;
-}
-
-.featured-collection .card--media > .card__content * {
-  color: #fff !important;
+.card__overlay-title {
   font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff !important;
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+}
+
+.card__overlay-price,
+.card__overlay-price * {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #fff !important;
+  font-size: 1.3rem;
+}
+
+/* Hide the original below-image card content in featured collection */
+.featured-collection .card--media > .card__content {
+  display: none !important;
 }
 
 body,
