@@ -41,7 +41,7 @@
   font-size: 1.3rem;
 }
 
-.featured-collection .card--media > .card__content {
+.card--media:has(.card__overlay-info) > .card__content {
   display: none !important;
 }
 
