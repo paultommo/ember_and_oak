@@ -6,6 +6,20 @@
         <span class="hero-custom__stars">★★★★★</span>
         <span class="hero-custom__review-count">5872 reviews</span>
       </div>
+      <div class="hero-custom__highlights">
+        <div class="hero-custom__highlight">
+          <strong>Small Batch</strong>
+          <p>Every sauce is made in small runs to ensure quality and consistency in every bottle.</p>
+        </div>
+        <div class="hero-custom__highlight">
+          <strong>Real Ingredients</strong>
+          <p>No fillers, no artificial flavours. Just peppers, vinegar, spices, and fire.</p>
+        </div>
+        <div class="hero-custom__highlight">
+          <strong>Oak-Smoked</strong>
+          <p>Our peppers are slow-roasted over oak wood to build flavour before the heat kicks in.</p>
+        </div>
+      </div>
     </div>
     <div class="hero-custom__col hero-custom__col--image">
       <img
@@ -65,6 +79,31 @@
     max-width: 560px;
     display: block;
     margin: 0 auto;
+  }
+
+  .hero-custom__highlights {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-custom__highlight strong {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.4rem;
+  }
+
+  .hero-custom__highlight p {
+    font-size: 1.4rem;
+    color: #000;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
   }
 
   @media screen and (max-width: 749px) {
