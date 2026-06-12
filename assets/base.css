@@ -2,6 +2,11 @@
   display: none !important;
 }
 
+.testimonial__quote {
+  border: none !important;
+  padding: 0 !important;
+}
+
 .footer-block__newsletter .footer-block__heading {
   text-transform: uppercase !important;
 }
