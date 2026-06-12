@@ -13,6 +13,10 @@
       "type": "hero-custom",
       "settings": {}
     },
+    "instagram_feed": {
+      "type": "instagram-feed",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -44,6 +48,7 @@
   },
   "order": [
     "hero_custom",
-    "featured_collection"
+    "featured_collection",
+    "instagram_feed"
   ]
 }

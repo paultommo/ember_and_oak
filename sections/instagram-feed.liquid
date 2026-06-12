@@ -1,0 +1,186 @@
+<div class="insta-feed">
+  <div class="insta-feed__header page-width">
+    <div class="insta-feed__account">
+      <div class="insta-feed__avatar">
+        <img src="{{ 'jar.png' | asset_url }}" alt="Ember & Oak Instagram">
+      </div>
+      <div class="insta-feed__meta">
+        <span class="insta-feed__handle">@emberandoak</span>
+        <span class="insta-feed__tagline">Handcrafted Heat. Honest Flavour.</span>
+      </div>
+    </div>
+    <a href="#" class="insta-feed__follow">Follow</a>
+  </div>
+
+  <div class="insta-feed__grid">
+    {%- assign posts = 'jar.png,hot-sauce.png,bbq-sauce.png,dry-rub.png,bundle.png,hot-sauce.png' | split: ',' -%}
+    {%- assign captions = 'Small batch. Big heat. 🔥,The one that started it all.,Smoke & slow fire.,11 spices. Zero shortcuts.,Gift the heat.,Chipotle smoked over oak.' | split: ',' -%}
+    {%- for post in posts -%}
+      <div class="insta-feed__post">
+        <img src="{{ post | asset_url }}" alt="Ember & Oak post {{ forloop.index }}" loading="lazy">
+        <div class="insta-feed__post-overlay">
+          <span class="insta-feed__post-caption">{{ captions[forloop.index0] }}</span>
+          <div class="insta-feed__post-stats">
+            <span>♥ {{ forloop.index | times: 312 | plus: 189 }}</span>
+            <span>💬 {{ forloop.index | times: 14 | plus: 7 }}</span>
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<style>
+  .insta-feed {
+    background: #F5EFE6;
+    padding: 60px 0;
+  }
+
+  .insta-feed__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+  }
+
+  .insta-feed__account {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .insta-feed__avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FE4B20;
+    flex-shrink: 0;
+  }
+
+  .insta-feed__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .insta-feed__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .insta-feed__handle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .insta-feed__tagline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: #555;
+  }
+
+  .insta-feed__follow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: #FE4B20;
+    color: #000;
+    padding: 1rem 3rem;
+    text-decoration: none;
+  }
+
+  .insta-feed__follow:hover {
+    background: #EBDA2F;
+  }
+
+  .insta-feed__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+  }
+
+  .insta-feed__post {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .insta-feed__post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .insta-feed__post:hover img {
+    transform: scale(1.05);
+  }
+
+  .insta-feed__post-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1.2rem;
+  }
+
+  .insta-feed__post:hover .insta-feed__post-overlay {
+    opacity: 1;
+  }
+
+  .insta-feed__post-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .insta-feed__post-stats {
+    display: flex;
+    gap: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 749px) {
+    .insta-feed__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .insta-feed__handle {
+      font-size: 1.6rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Instagram Feed",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Instagram Feed"
+    }
+  ]
+}
+{% endschema %}
