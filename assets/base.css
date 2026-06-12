@@ -2,6 +2,37 @@
   display: none !important;
 }
 
+/* Collection page */
+.collection-hero__title,
+.collection .title {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+.facets-container,
+.facets__header {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.facets__label,
+.facets-horizontal .facets__summary {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+.facets__reset,
+.facets-horizontal .facets__reset {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.active-facets__button,
+.active-facets .button {
+  border-radius: 0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 .button:after,
 .button:before {
   box-shadow: none !important;
