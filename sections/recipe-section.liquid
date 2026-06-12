@@ -1,74 +1,37 @@
 <div class="recipe-section">
   <div class="recipe-section__header page-width">
     <h2 class="recipe-section__title">Fire Up the Kitchen</h2>
-    <p class="recipe-section__subtitle">Recipes worth getting messy for</p>
   </div>
 
   <div class="recipe-section__grid page-width">
 
-    <div class="recipe-card">
+    <a href="/blogs/recipes/smoked-wings" class="recipe-card">
       <div class="recipe-card__image" style="background: #1C1C1C;">
         <img src="{{ 'hot-sauce.png' | asset_url }}" alt="Smoked Wings" class="recipe-card__img">
-        <span class="recipe-card__badge">Hot Sauce</span>
       </div>
-      <div class="recipe-card__body">
-        <h3 class="recipe-card__title">Ember & Oak Smoked Wings</h3>
-        <p class="recipe-card__desc">Crispy wings tossed in Slow Burn and smoked over oak chips for 2 hours. The kind of wings people ask for the recipe.</p>
-        <div class="recipe-card__meta">
-          <span>⏱ 2h 30m</span>
-          <span>🔥 Medium Heat</span>
-          <span>🍽 Serves 4</span>
-        </div>
-      </div>
-    </div>
+      <p class="recipe-card__title">Ember & Oak Smoked Wings</p>
+    </a>
 
-    <div class="recipe-card">
+    <a href="/blogs/recipes/pitmaster-ribs" class="recipe-card">
       <div class="recipe-card__image" style="background: #5C6B3A;">
         <img src="{{ 'bbq-sauce.png' | asset_url }}" alt="BBQ Ribs" class="recipe-card__img">
-        <span class="recipe-card__badge">BBQ Sauce</span>
       </div>
-      <div class="recipe-card__body">
-        <h3 class="recipe-card__title">Pitmaster Sticky Ribs</h3>
-        <p class="recipe-card__desc">Low and slow pork ribs glazed three times with Pitmaster's Blend. Fall-off-the-bone guaranteed. No compromise.</p>
-        <div class="recipe-card__meta">
-          <span>⏱ 5h</span>
-          <span>🔥 Mild Heat</span>
-          <span>🍽 Serves 6</span>
-        </div>
-      </div>
-    </div>
+      <p class="recipe-card__title">Pitmaster Sticky Ribs</p>
+    </a>
 
-    <div class="recipe-card">
+    <a href="/blogs/recipes/hellfire-burger" class="recipe-card">
       <div class="recipe-card__image" style="background: #D4521A;">
         <img src="{{ 'jar.png' | asset_url }}" alt="Hellfire Burger" class="recipe-card__img">
-        <span class="recipe-card__badge">Hot Sauce</span>
       </div>
-      <div class="recipe-card__body">
-        <h3 class="recipe-card__title">Hellfire Smash Burger</h3>
-        <p class="recipe-card__desc">Double smash patties, pepper jack, caramelised onions and a healthy dose of Hellfire Reserve. Not for the faint-hearted.</p>
-        <div class="recipe-card__meta">
-          <span>⏱ 25m</span>
-          <span>🔥 Extra Hot</span>
-          <span>🍽 Serves 2</span>
-        </div>
-      </div>
-    </div>
+      <p class="recipe-card__title">Hellfire Smash Burger</p>
+    </a>
 
-    <div class="recipe-card">
+    <a href="/blogs/recipes/signature-brisket" class="recipe-card">
       <div class="recipe-card__image" style="background: #3A2A1A;">
         <img src="{{ 'dry-rub.png' | asset_url }}" alt="Brisket" class="recipe-card__img">
-        <span class="recipe-card__badge">Dry Rub</span>
       </div>
-      <div class="recipe-card__body">
-        <h3 class="recipe-card__title">Signature Rub Brisket</h3>
-        <p class="recipe-card__desc">A whole packer brisket coated in our Signature Blend and smoked for 14 hours until the bark is dark and the inside melts.</p>
-        <div class="recipe-card__meta">
-          <span>⏱ 14h</span>
-          <span>🔥 No Heat</span>
-          <span>🍽 Serves 10</span>
-        </div>
-      </div>
-    </div>
+      <p class="recipe-card__title">Signature Rub Brisket</p>
+    </a>
 
   </div>
 </div>
@@ -90,13 +53,6 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #000;
-    margin: 0 0 1rem;
-  }
-
-  .recipe-section__subtitle {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
-    color: #555;
     margin: 0;
   }
 
@@ -107,18 +63,22 @@
   }
 
   .recipe-card {
-    background: #fff;
     display: flex;
     flex-direction: column;
+    text-decoration: none !important;
   }
 
   .recipe-card__image {
-    position: relative;
     aspect-ratio: 1;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.2s ease;
+  }
+
+  .recipe-card:hover .recipe-card__image {
+    opacity: 0.85;
   }
 
   .recipe-card__img {
@@ -128,56 +88,14 @@
     display: block;
   }
 
-  .recipe-card__badge {
-    position: absolute;
-    top: 1.2rem;
-    left: 1.2rem;
-    background: #FE4B20;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 0.4rem 0.8rem;
-  }
-
-  .recipe-card__body {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
   .recipe-card__title {
     font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #000;
-    margin: 0 0 1rem;
+    margin: 1.2rem 0 0;
     line-height: 1.2;
-  }
-
-  .recipe-card__desc {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.4rem;
-    color: #444;
-    line-height: 1.5;
-    margin: 0 0 1.6rem;
-    flex: 1;
-  }
-
-  .recipe-card__meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #000;
-    border-top: 2px solid #FE4B20;
-    padding-top: 1.2rem;
   }
 
   @media screen and (max-width: 989px) {
@@ -188,7 +106,7 @@
 
   @media screen and (max-width: 749px) {
     .recipe-section__grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .recipe-section__title {
