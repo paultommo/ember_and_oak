@@ -13,6 +13,10 @@
       "type": "hero-custom",
       "settings": {}
     },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {}
+    },
     "instagram_feed": {
       "type": "instagram-feed",
       "settings": {}
@@ -52,6 +56,7 @@
   },
   "order": [
     "hero_custom",
+    "testimonials",
     "featured_collection",
     "recipe_section",
     "instagram_feed"

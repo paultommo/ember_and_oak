@@ -1,0 +1,93 @@
+<div class="testimonials">
+  <div class="testimonials__grid page-width">
+
+    <div class="testimonial">
+      <div class="testimonial__stars">★★★★★</div>
+      <blockquote class="testimonial__quote">
+        "Slow Burn has permanently replaced every other hot sauce in my kitchen. The smokiness is unlike anything I've tried — heat that actually builds instead of just burning."
+      </blockquote>
+      <p class="testimonial__author">— Jamie R., Manchester</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial__stars">★★★★★</div>
+      <blockquote class="testimonial__quote">
+        "Ordered the Starter Kit as a gift and ended up keeping it. Oak & Ember Original is my desert island sauce. Balanced, complex, and dangerously addictive."
+      </blockquote>
+      <p class="testimonial__author">— Priya M., London</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial__stars">★★★★★</div>
+      <blockquote class="testimonial__quote">
+        "I thought I could handle The Inferno. I was wrong. But I went back for more the next day. That's how good it is. Ember & Oak have ruined supermarket hot sauce for me forever."
+      </blockquote>
+      <p class="testimonial__author">— Dan T., Glasgow</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .testimonials {
+    background: #EBDA2F;
+    padding: 60px 0;
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .testimonial__stars {
+    font-size: 2.4rem;
+    color: #000;
+    letter-spacing: 0.1em;
+  }
+
+  .testimonial__quote {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    font-style: normal;
+  }
+
+  .testimonial__author {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media screen and (max-width: 749px) {
+    .testimonials__grid {
+      grid-template-columns: 1fr;
+      gap: 3.2rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Testimonials"
+    }
+  ]
+}
+{% endschema %}
