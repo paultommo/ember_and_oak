@@ -25,6 +25,47 @@
   z-index: 5;
 }
 
+.card__overlay-form {
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.card__overlay-atc {
+  display: block !important;
+  width: 100% !important;
+  background: #FE4B20 !important;
+  color: #000 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0.8rem 1.2rem !important;
+  cursor: pointer !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  outline: none;
+  box-shadow: none !important;
+  position: static !important;
+}
+
+.card__overlay-atc:hover {
+  background: #EBDA2F !important;
+}
+
+.card__overlay-sold-out {
+  display: block;
+  margin-top: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.6) !important;
+  text-transform: uppercase;
+}
+
 .card__overlay-title {
   font-family: Arial, Helvetica, sans-serif !important;
   font-size: 1.4rem;
