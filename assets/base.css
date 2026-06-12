@@ -2,6 +2,13 @@
   display: none !important;
 }
 
+#cart-icon-bubble svg,
+#cart-icon-bubble .svg-wrapper,
+#cart-icon-bubble .cart-count-bubble,
+#cart-icon-bubble .visually-hidden {
+  display: none !important;
+}
+
 /* Collection page */
 .collection-hero__title,
 .collection .title {
