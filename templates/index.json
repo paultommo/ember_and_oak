@@ -13,48 +13,6 @@
       "type": "hero-custom",
       "settings": {}
     },
-    "brand_statement": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Born in the Smoke. Bottled with Care.",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Every Ember & Oak sauce starts with fire. We slow-roast our peppers over oak wood, blend them by hand, and bottle them in small batches. No shortcuts. No fillers. Just real ingredients and real heat — from a gentle tingle to an all-out inferno.</p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Explore the Range",
-            "button_link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -80,53 +38,6 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "collection_list": {
-      "type": "collection-list",
-      "blocks": {
-        "hot_sauces": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hot-sauces"
-          }
-        },
-        "bbq_sauces": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bbq-sauces"
-          }
-        },
-        "dry_rubs": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dry-rubs"
-          }
-        },
-        "bundles": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bundles"
-          }
-        }
-      },
-      "block_order": [
-        "hot_sauces",
-        "bbq_sauces",
-        "dry_rubs",
-        "bundles"
-      ],
-      "settings": {
-        "title": "Shop by Category",
-        "heading_size": "h2",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "scheme-2",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -214,9 +125,7 @@
   },
   "order": [
     "hero_custom",
-    "brand_statement",
     "featured_collection",
-    "collection_list",
     "brand_values",
     "newsletter"
   ]
