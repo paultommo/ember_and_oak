@@ -2,6 +2,27 @@
   display: none !important;
 }
 
+.collection__title .collection__view-all .button,
+.collection__view-all .button {
+  display: inline-block !important;
+  background: #000 !important;
+  color: #fff !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  padding: 1.4rem 3.6rem !important;
+  border: none !important;
+  border-radius: 0 !important;
+  text-decoration: none !important;
+}
+
+.collection__view-all .button:hover {
+  background: #EBDA2F !important;
+  color: #000 !important;
+}
+
 .skip-to-content-link {
   display: none !important;
 }
