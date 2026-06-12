@@ -2,7 +2,13 @@
   <div class="heatmail-modal" role="dialog" aria-modal="true" aria-labelledby="heatmail-title">
     <button class="heatmail-close" id="heatmail-close" aria-label="Close">&times;</button>
     <div class="heatmail-body">
-      <p class="heatmail-eyebrow">🔥</p>
+      <div class="heatmail-eyebrow">
+        {%- if settings.logo != blank -%}
+          {{ settings.logo | image_url: width: 160 | image_tag: class: 'heatmail-logo', alt: shop.name }}
+        {%- else -%}
+          <span class="heatmail-logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </div>
       <h2 class="heatmail-title" id="heatmail-title">The heat is on</h2>
       <p class="heatmail-copy">Get 10% off when you sign up to Heatmail</p>
       {%- form 'customer', id: 'heatmail-form', class: 'heatmail-form' -%}

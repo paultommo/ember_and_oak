@@ -373,8 +373,5 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="{{ 'overlay-cart.js' | asset_url }}" defer="defer"></script>
-    {%- if request.page_type == 'index' -%}
-      {%- render 'heatmail-modal' -%}
-    {%- endif -%}
   </body>
 </html>
