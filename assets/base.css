@@ -41,11 +41,6 @@
   font-size: 1.3rem;
 }
 
-/* Hide the original below-image card content in featured collection */
-.featured-collection .card--media > .card__content {
-  display: none !important;
-}
-
 body,
 button,
 input,
