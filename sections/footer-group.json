@@ -17,7 +17,7 @@
         "footer_menu": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick Links",
+            "heading": "",
             "menu": "footer"
           }
         },

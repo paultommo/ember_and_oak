@@ -1,3 +1,37 @@
+/* Footer layout */
+.footer__content-top {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 4rem;
+}
+
+.footer__blocks-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-shrink: 0;
+}
+
+.footer-block__details-content.list-unstyled {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.8rem;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.footer-block__details-content.list-unstyled li {
+  display: block !important;
+}
+
+.footer-block--newsletter {
+  margin-left: auto !important;
+  max-width: 400px;
+  flex-shrink: 0;
+}
+
 .collection__title .title {
   font-family: Arial, Helvetica, sans-serif !important;
   text-transform: uppercase !important;
