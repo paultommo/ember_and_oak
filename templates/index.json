@@ -41,38 +41,9 @@
         "padding_bottom": 36
       }
     },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Join the Heat",
-            "heading_size": "h1"
-          }
-        },
-        "subheading": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Sign up for early access to new sauces, fire-side recipes, and exclusive drops.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "subheading"
-      ],
-      "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    }
   },
   "order": [
     "hero_custom",
-    "featured_collection",
-    "newsletter"
+    "featured_collection"
   ]
 }

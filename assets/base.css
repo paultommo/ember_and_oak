@@ -1,6 +1,11 @@
-.featured-collection .title {
+.collection__title .title {
   font-family: Arial, Helvetica, sans-serif !important;
   text-transform: uppercase !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.collection__title {
   text-align: center !important;
 }
 
@@ -8,14 +13,13 @@
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
-.featured-collection .card__inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.card {
+  display: flex !important;
+  flex-direction: column !important;
 }
 
-.featured-collection .card__content {
-  margin-top: auto;
+.card > .card__content {
+  margin-top: auto !important;
 }
 
 body,
