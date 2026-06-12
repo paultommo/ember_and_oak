@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.skip-to-content-link {
+  display: none !important;
+}
+
 /* Footer layout */
 .footer__content-top {
   display: flex !important;
