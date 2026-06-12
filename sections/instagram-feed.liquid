@@ -1,6 +1,6 @@
 <div class="insta-feed">
   <div class="insta-feed__header page-width">
-    <p class="insta-feed__tagline">Follow along at @emberandoak</p>
+    <h2 class="insta-feed__tagline">Follow along at @emberandoak</h2>
   </div>
 
   <div class="insta-feed__grid">
@@ -30,7 +30,7 @@
   .insta-feed__header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 3.2rem;
   }
 
@@ -71,9 +71,14 @@
   }
 
   .insta-feed__tagline {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    color: #555;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    margin: 0;
   }
 
   .insta-feed__follow {
