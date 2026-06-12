@@ -108,16 +108,6 @@
           <div class="card__overlay-info">
             <h3 class="card__overlay-title">{{ card_product.title | escape }}</h3>
             <div class="card__overlay-price">{% render 'price', product: card_product, price_class: '' %}</div>
-            {%- assign first_variant = card_product.selected_or_first_available_variant -%}
-            {%- if first_variant.available -%}
-              <form action="/cart/add" method="post" class="card__overlay-form">
-                <input type="hidden" name="id" value="{{ first_variant.id }}">
-                <input type="hidden" name="quantity" value="1">
-                <button type="submit" class="card__overlay-atc">Add to Cart</button>
-              </form>
-            {%- else -%}
-              <span class="card__overlay-sold-out">Sold Out</span>
-            {%- endif -%}
           </div>
         {%- endif -%}
         <div class="card__content">
