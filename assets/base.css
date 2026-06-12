@@ -13,17 +13,33 @@ textarea {
   text-transform: uppercase !important;
   padding: 1.2rem !important;
   letter-spacing: 0.02em;
+  text-decoration: none !important;
+}
+
+.header__menu-item:hover span,
+.header__menu-item span {
+  text-decoration: none !important;
 }
 
 .header__text-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  text-decoration: none !important;
   color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__text-link:hover {
   color: rgb(var(--color-foreground));
+  text-decoration: none !important;
+}
+
+.header__icons {
+  justify-content: space-between !important;
+  width: 500px !important;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 :root {
