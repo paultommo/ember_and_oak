@@ -1,0 +1,68 @@
+<div class="brand-highlights">
+  <div class="brand-highlights__inner page-width">
+    <div class="brand-highlight">
+      <strong>Small Batch</strong>
+      <p>Every sauce is made in small runs to ensure quality and consistency in every bottle.</p>
+    </div>
+    <div class="brand-highlight">
+      <strong>Real Ingredients</strong>
+      <p>No fillers, no artificial flavours. Just peppers, vinegar, spices, and fire.</p>
+    </div>
+    <div class="brand-highlight">
+      <strong>Oak-Smoked</strong>
+      <p>Our peppers are slow-roasted over oak wood to build flavour before the heat kicks in.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .brand-highlights {
+    background-color: #FE4B20;
+    padding: 40px 0;
+    border-top: 2px solid rgba(0,0,0,0.1);
+  }
+
+  .brand-highlights__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  .brand-highlight strong {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.03em;
+  }
+
+  .brand-highlight p {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.4rem;
+    color: #000;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 749px) {
+    .brand-highlights__inner {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Brand Highlights",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Brand Highlights"
+    }
+  ]
+}
+{% endschema %}

@@ -13,6 +13,10 @@
       "type": "hero-custom",
       "settings": {}
     },
+    "brand_highlights": {
+      "type": "brand-highlights",
+      "settings": {}
+    },
     "testimonials": {
       "type": "testimonials",
       "settings": {}
@@ -56,6 +60,7 @@
   },
   "order": [
     "hero_custom",
+    "brand_highlights",
     "testimonials",
     "featured_collection",
     "recipe_section",
