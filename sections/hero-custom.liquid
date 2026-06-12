@@ -1,0 +1,95 @@
+<div class="hero-custom">
+  <div class="hero-custom__inner page-width">
+    <div class="hero-custom__col hero-custom__col--text">
+      <h1 class="hero-custom__headline">It doesn't get hotter than this</h1>
+      <div class="hero-custom__reviews">
+        <span class="hero-custom__stars">★★★★★</span>
+        <span class="hero-custom__review-count">5872 reviews</span>
+      </div>
+    </div>
+    <div class="hero-custom__col hero-custom__col--image">
+      <img
+        src="{{ 'jar.png' | asset_url }}"
+        alt="Ember & Oak hot sauce jar"
+        class="hero-custom__image"
+        loading="eager"
+      >
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero-custom {
+    background-color: #FE4B20;
+    padding: 80px 0;
+  }
+
+  .hero-custom__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hero-custom__headline {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 0 0 3.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .hero-custom__reviews {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .hero-custom__stars {
+    font-size: 3rem;
+    color: #000;
+    line-height: 1;
+  }
+
+  .hero-custom__review-count {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .hero-custom__image {
+    width: 100%;
+    max-width: 560px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero-custom__inner {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-custom__headline {
+      font-size: 4rem;
+    }
+
+    .hero-custom__col--image {
+      order: -1;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Hero",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Custom Hero"
+    }
+  ]
+}
+{% endschema %}

@@ -9,53 +9,9 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Handcrafted Heat. Honest Flavour.",
-            "heading_size": "h0"
-          }
-        },
-        "subheading": {
-          "type": "text",
-          "settings": {
-            "text": "Small-batch hot sauces & BBQ condiments built for people who take flavour seriously.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "Our Story",
-            "button_link_2": "shopify://pages/about",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "subheading",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/hero-ember-small.png",
-        "image_overlay_opacity": 50,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
+    "hero_custom": {
+      "type": "hero-custom",
+      "settings": {}
     },
     "brand_statement": {
       "type": "rich-text",
@@ -257,7 +213,7 @@
     }
   },
   "order": [
-    "image_banner",
+    "hero_custom",
     "brand_statement",
     "featured_collection",
     "collection_list",
