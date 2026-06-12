@@ -1,3 +1,7 @@
+.footer__content-bottom {
+  display: none !important;
+}
+
 /* Footer layout */
 .footer__content-top {
   display: flex !important;
