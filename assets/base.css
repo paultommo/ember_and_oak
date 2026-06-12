@@ -6,6 +6,26 @@ textarea {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
+.header__menu-item,
+.header__text-link {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  padding: 1.2rem !important;
+  letter-spacing: 0.02em;
+}
+
+.header__text-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.header__text-link:hover {
+  color: rgb(var(--color-foreground));
+}
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;

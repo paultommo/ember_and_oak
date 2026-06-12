@@ -247,14 +247,13 @@
           </localization-form>
         {%- endif -%}
       </div>
-      <a href="{{ routes.search_url }}" class="header__icon link focus-inset small-hide" style="font-size:1.3rem;letter-spacing:0.05em;padding:0 0.8rem;">Search</a>
+      <a href="{{ routes.search_url }}" class="header__icon header__text-link link focus-inset small-hide">Search</a>
 
       {%- if shop.customer_accounts_enabled -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-          class="header__icon link focus-inset small-hide"
+          class="header__icon header__text-link link focus-inset small-hide"
           rel="nofollow"
-          style="font-size:1.3rem;letter-spacing:0.05em;padding:0 0.8rem;"
         >Account</a>
       {%- endif -%}
 
@@ -265,7 +264,7 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon link focus-inset" id="cart-icon-bubble" style="font-size:1.3rem;letter-spacing:0.05em;padding:0 0.8rem;position:relative;">
+      <a href="{{ routes.cart_url }}" class="header__icon header__text-link link focus-inset" id="cart-icon-bubble">
         Cart{%- if cart.item_count > 0 -%}&nbsp;({{ cart.item_count }}){%- endif -%}
       </a>
     </div>
