@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.footer-block__newsletter .footer-block__heading {
+  text-transform: uppercase !important;
+}
+
 /* Cart page */
 .main-cart-items *,
 .main-cart-footer * {

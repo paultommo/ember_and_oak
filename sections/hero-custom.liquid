@@ -29,6 +29,26 @@
         class="hero-custom__image"
         loading="eager"
       >
+      <div class="hero-custom__newsletter">
+        <p class="hero-custom__newsletter-heading">Subscribe to Heatmail</p>
+        {%- form 'customer', id: 'hero-newsletter-form', class: 'hero-custom__newsletter-form' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div class="hero-custom__newsletter-field">
+            <input
+              type="email"
+              name="contact[email]"
+              placeholder="Your email address"
+              required
+              autocomplete="email"
+              class="hero-custom__newsletter-input"
+            >
+            <button type="submit" class="hero-custom__newsletter-submit">Join</button>
+          </div>
+          {%- if form.posted_successfully? -%}
+            <p class="hero-custom__newsletter-success">You're in. 🔥</p>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
     </div>
   </div>
 </div>
@@ -124,6 +144,67 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+  }
+
+  .hero-custom__newsletter {
+    margin-top: 3.2rem;
+  }
+
+  .hero-custom__newsletter-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 1.2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-custom__newsletter-field {
+    display: flex;
+  }
+
+  .hero-custom__newsletter-input {
+    flex: 1;
+    padding: 1.2rem 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    border: none;
+    background: #fff;
+    color: #000;
+    outline: none;
+    min-width: 0;
+  }
+
+  .hero-custom__newsletter-input::placeholder {
+    color: #999;
+  }
+
+  .hero-custom__newsletter-submit {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .hero-custom__newsletter-submit:hover {
+    background: #EBDA2F;
+    color: #000;
+  }
+
+  .hero-custom__newsletter-success {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 1rem;
   }
 
   @media screen and (max-width: 749px) {
