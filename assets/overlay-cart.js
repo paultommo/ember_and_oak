@@ -1,3 +1,37 @@
+function setCartText(count) {
+  const bubbles = document.querySelectorAll('#cart-icon-bubble');
+  bubbles.forEach((el) => {
+    const text = count > 0 ? `Cart (${count})` : 'Cart';
+    if (el.textContent.trim() !== text) {
+      el.innerHTML = text;
+    }
+  });
+}
+
+function fetchAndSetCart() {
+  fetch('/cart.js')
+    .then((res) => res.json())
+    .then((cart) => setCartText(cart.item_count))
+    .catch(() => {});
+}
+
+// Watch for Dawn restoring the SVG cart markup and override it
+function observeCartBubble() {
+  const bubble = document.getElementById('cart-icon-bubble');
+  if (!bubble) return;
+
+  fetchAndSetCart();
+
+  const observer = new MutationObserver(() => {
+    if (bubble.querySelector('svg') || bubble.querySelector('.cart-count-bubble')) {
+      fetchAndSetCart();
+    }
+  });
+
+  observer.observe(bubble, { childList: true, subtree: true });
+}
+
+// AJAX add-to-cart for overlay buttons
 document.addEventListener('click', function (e) {
   const btn = e.target.closest('.card__overlay-atc');
   if (!btn) return;
@@ -20,7 +54,7 @@ document.addEventListener('click', function (e) {
     .then((res) => res.json())
     .then(() => {
       btn.textContent = 'Added!';
-      updateCartCount();
+      fetchAndSetCart();
       setTimeout(() => {
         btn.textContent = 'Add to Cart';
         btn.disabled = false;
@@ -32,14 +66,4 @@ document.addEventListener('click', function (e) {
     });
 });
 
-function updateCartCount() {
-  fetch('/cart.js')
-    .then((res) => res.json())
-    .then((cart) => {
-      const bubbles = document.querySelectorAll('#cart-icon-bubble');
-      bubbles.forEach((el) => {
-        const count = cart.item_count;
-        el.textContent = count > 0 ? `Cart (${count})` : 'Cart';
-      });
-    });
-}
+document.addEventListener('DOMContentLoaded', observeCartBubble);
