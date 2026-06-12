@@ -35,11 +35,6 @@
 
   </div>
 
-  <div class="testimonials__dots page-width">
-    <button class="testimonials__dot is-active" data-index="0" aria-label="Testimonial 1"></button>
-    <button class="testimonials__dot" data-index="1" aria-label="Testimonial 2"></button>
-    <button class="testimonials__dot" data-index="2" aria-label="Testimonial 3"></button>
-  </div>
 </div>
 
 <style>
@@ -121,27 +116,6 @@
     color: #FE4B20;
   }
 
-  .testimonials__dots {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2.4rem;
-  }
-
-  .testimonials__dot {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.3);
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition: background 0.2s ease;
-  }
-
-  .testimonials__dot.is-active {
-    background: #000;
-  }
 
   @media screen and (max-width: 749px) {
     .testimonials__nav {
@@ -159,20 +133,16 @@
 <script>
   (function () {
     const items = document.querySelectorAll('.testimonials .testimonial');
-    const dots = document.querySelectorAll('.testimonials .testimonials__dot');
     let current = 0;
 
     function show(index) {
       items[current].classList.remove('is-active');
-      dots[current].classList.remove('is-active');
       current = (index + items.length) % items.length;
       items[current].classList.add('is-active');
-      dots[current].classList.add('is-active');
     }
 
     document.querySelector('.testimonials__nav--prev').addEventListener('click', () => show(current - 1));
     document.querySelector('.testimonials__nav--next').addEventListener('click', () => show(current + 1));
-    dots.forEach((dot) => dot.addEventListener('click', () => show(parseInt(dot.dataset.index))));
   })();
 </script>
 
