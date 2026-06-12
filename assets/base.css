@@ -79,6 +79,15 @@ textarea {
 .header__text-link:hover {
   color: rgb(var(--color-foreground));
   text-decoration: none !important;
+  text-shadow: 0 0 12px #FE4B20, 0 0 24px #FE4B20;
+}
+
+.header__menu-item:hover {
+  text-shadow: 0 0 12px #FE4B20, 0 0 24px #FE4B20;
+}
+
+.header__menu-item:hover span {
+  text-shadow: 0 0 12px #FE4B20, 0 0 24px #FE4B20;
 }
 
 .header__icons {
