@@ -41,59 +41,6 @@
         "padding_bottom": 36
       }
     },
-    "brand_values": {
-      "type": "multicolumn",
-      "blocks": {
-        "col_1": {
-          "type": "column",
-          "settings": {
-            "title": "Small Batch",
-            "text": "<p>Every sauce is made in small runs to ensure quality and consistency in every bottle.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "col_2": {
-          "type": "column",
-          "settings": {
-            "title": "Real Ingredients",
-            "text": "<p>No fillers, no artificial flavours. Just peppers, vinegar, spices, and fire.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "col_3": {
-          "type": "column",
-          "settings": {
-            "title": "Oak-Smoked",
-            "text": "<p>Our peppers are slow-roasted over oak wood to build flavour before the heat kicks in.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "col_1",
-        "col_2",
-        "col_3"
-      ],
-      "settings": {
-        "title": "Why Ember & Oak",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
@@ -126,7 +73,6 @@
   "order": [
     "hero_custom",
     "featured_collection",
-    "brand_values",
     "newsletter"
   ]
 }
