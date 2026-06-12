@@ -3,11 +3,11 @@
 }
 
 /* Cart page */
-.template-cart #MainContent {
+.template--cart #MainContent {
   background-color: #FE4B20 !important;
 }
 
-.template-cart #MainContent * {
+.template--cart #MainContent * {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
