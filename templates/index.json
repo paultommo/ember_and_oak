@@ -18,7 +18,7 @@
       "settings": {
         "collection": "hot-sauces",
         "products_to_show": 4,
-        "title": "Hot Sauces",
+        "title": "Explore the Range",
         "heading_size": "h2",
         "description": "<p>From everyday mild to face-melting heat — find your level.</p>",
         "show_description": true,
@@ -28,7 +28,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,

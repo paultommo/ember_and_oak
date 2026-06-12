@@ -1,3 +1,8 @@
+.featured-collection .title {
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-transform: uppercase !important;
+}
+
 body,
 button,
 input,
