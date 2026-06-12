@@ -68,7 +68,7 @@
 }
 
 .collection__view-all .button:hover {
-  background: #EBDA2F !important;
+  background: #FE4B20 !important;
   color: #000 !important;
 }
 
@@ -198,11 +198,7 @@
   display: none !important;
 }
 
-body,
-button,
-input,
-select,
-textarea {
+* {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
