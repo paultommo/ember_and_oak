@@ -17,6 +17,10 @@
       "type": "instagram-feed",
       "settings": {}
     },
+    "recipe_section": {
+      "type": "recipe-section",
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -49,6 +53,7 @@
   "order": [
     "hero_custom",
     "featured_collection",
+    "recipe_section",
     "instagram_feed"
   ]
 }
