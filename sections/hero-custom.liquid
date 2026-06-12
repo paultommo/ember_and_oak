@@ -29,26 +29,6 @@
         class="hero-custom__image"
         loading="eager"
       >
-      <div class="hero-custom__newsletter">
-        <p class="hero-custom__newsletter-heading">Subscribe to Heatmail</p>
-        {%- form 'customer', id: 'hero-newsletter-form', class: 'hero-custom__newsletter-form' -%}
-          <input type="hidden" name="contact[tags]" value="newsletter">
-          <div class="hero-custom__newsletter-field">
-            <input
-              type="email"
-              name="contact[email]"
-              placeholder="Your email address"
-              required
-              autocomplete="email"
-              class="hero-custom__newsletter-input"
-            >
-            <button type="submit" class="hero-custom__newsletter-submit">Join</button>
-          </div>
-          {%- if form.posted_successfully? -%}
-            <p class="hero-custom__newsletter-success">You're in. 🔥</p>
-          {%- endif -%}
-        {%- endform -%}
-      </div>
     </div>
   </div>
 </div>
